@@ -4,7 +4,7 @@ package:
   version: v0.0.5
 
 source:
-  path: .
+  path: ..
 
 build:
   noarch: python
