@@ -1,15 +1,14 @@
 {% set data = load_setup_py_data() %}
 package:
   name: grelease
-  version: v0.0.5
+  version: v0.0.8
 
 source:
   path: ..
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: python -m pip install . -vv
 
 requirements:
   build:
