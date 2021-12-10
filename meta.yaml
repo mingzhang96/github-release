@@ -1,0 +1,30 @@
+{% set data = load_setup_py_data() %}
+package:
+  name: grelease
+  version: v0.0.1
+
+source:
+  path: .
+
+build:
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - trueskill
+
+test:
+  imports:
+    - grelease
+
+about:
+  url: https://github.com/zhangming/github-release
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: hi
