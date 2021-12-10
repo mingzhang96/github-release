@@ -7,7 +7,7 @@ from setuptools import setup
 
 setup(
     name='github-release',
-    version='0.1',
+    version='0.0.3',
     description='github release test',
     author='OpenDILab',
     license='Apache License, Version 2.0',
